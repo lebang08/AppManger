@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity implements
 //        mRecycylerView.scrollToPosition(11);
 //        mRecycylerView.smoothScrollToPosition(15);
         for (int i = 0; i < mAppList.size(); i++) {
-            if (mAppList.get(i).label_name.contains(mMarkList.get(position))) {
+            if (mAppList.get(i).label_name.equals(mMarkList.get(position))) {
                 mLayoutManager.scrollToPositionWithOffset(i, 0);
                 break;
             }
